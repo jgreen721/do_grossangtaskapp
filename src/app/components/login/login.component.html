@@ -1,0 +1,40 @@
+<div class="bg-dark">
+  <!-- <div class="container bg-dark"> -->
+  <div
+    class="bg-dark text-light d-flex align-items-center justify-content-center flex-column p-3"
+  >
+    <h1>Angular-Task LOGIN</h1>
+    <h5>Sign in to view <em>your</em> tasks</h5>
+  </div>
+  <div class="p-5 d-flex align-items-center justify-content-center flex-column">
+    <h3 class="my-4 text-danger">{{ this.error }}</h3>
+    <div class="p-5 border border-danger w-75 w-full rounded my-5">
+      <div class="my-3 form-div">
+        <input
+          type="text"
+          name="username"
+          autocomplete="off"
+          placeholder="Username..."
+          [(ngModel)]="username"
+          class="form-control p-2 border-none"
+        />
+      </div>
+      <div class="my-3 form-div">
+        <input
+          type="text"
+          name="password"
+          autocomplete="off"
+          placeholder="Password..."
+          [(ngModel)]="password"
+          class="form-control p-2 border-none"
+        />
+      </div>
+      <button (click)="handleLogin()" class="btn btn-danger">Login</button>
+    </div>
+  </div>
+
+  <footer class="text-center p-1 text-light">
+    <p>Footer&copy;</p>
+  </footer>
+  <!-- </div> -->
+</div>
